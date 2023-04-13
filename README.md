@@ -64,17 +64,20 @@ Front-end deployment
 Back-end deployment
 Open the application.yml file in the backend package and modify the database information in the file
 
+![图片6](https://user-images.githubusercontent.com/124135718/231639752-20d3eebd-588a-4928-a171-f04b9ce914f6.png)
+
 
 ①：数据库url
 ②：用户名
 ③：密码
 然后用java命令启动automldemo1.jar包,默认端口号为9999
-![图片6](https://user-images.githubusercontent.com/124135718/231639752-20d3eebd-588a-4928-a171-f04b9ce914f6.png)
+
 ①: database url
 ②: Username
 ③: Password
 
 Then start the automldemo1.jar package with the java command, the default port number is 9999
+
 ![图片7](https://user-images.githubusercontent.com/124135718/231639789-5650b1d4-460f-433a-ba0f-29b798a52648.png)
 
 
