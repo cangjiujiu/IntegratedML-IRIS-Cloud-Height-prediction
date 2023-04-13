@@ -41,10 +41,10 @@ Data Initialization
 1. Create a table with sql statements
 
 
-    create table IF NOT EXISTS MLTEST_MSG.HeightWeightPredictMSG (Id int primary key identity(101,2),number varchar(50), Height float, Weight  float);
-    create table IF NOT EXISTS MLTEST_MSG.HeightWeightMSG (Id int primary key identity(101,2),number varchar(50), Height float, Weight  float);
-    create table IF NOT EXISTS MLTEST_MSG.FamilyMSG(id int primary key identity(101,2),Csex int, Family float,Father float,Mother float, num int,Height float);
-    create table IF NOT EXISTS MLTEST_MSG.FamilyPredictMSG(id int primary key identity(101,2),Csex int, Family float,Father float,Mother float, num int,Height float);
+        create table IF NOT EXISTS MLTEST_MSG.HeightWeightPredictMSG (Id int primary key identity(101,2),number varchar(50), Height float, Weight  float);
+        create table IF NOT EXISTS MLTEST_MSG.HeightWeightMSG (Id int primary key identity(101,2),number varchar(50), Height float, Weight  float);
+        create table IF NOT EXISTS MLTEST_MSG.FamilyMSG(id int primary key identity(101,2),Csex int, Family float,Father float,Mother float, num int,Height float);
+        create table IF NOT EXISTS MLTEST_MSG.FamilyPredictMSG(id int primary key identity(101,2),Csex int, Family float,Father float,Mother float, num int,Height float);
 
  ![图片1](https://user-images.githubusercontent.com/124135718/231645513-1c1a137a-9bec-407f-bfdd-e48a974c4ade.png)
 
@@ -108,10 +108,10 @@ Then start the automldemo1.jar package with the java command, the default port n
 After starting, enter the front-end page (if you use tomcat to start the address: ip: port/distML)
 The first time you enter the page, the model will be created and trained, and you need to wait for a while. You can also create a model with the following statement after the data initialization and table creation in step 1.
 
-    Create model FamiyModel predicting (Height) from MLTEST_MSG.FamilyMSG
-    Train model FamiyModel
-    Create model HeightWeightMODEL predicting (Height) WITH (Weight float)  from MLTEST_MSG.HeightWeightMSG
-    Train model HeightWeightMODEL
+       Create model FamiyModel predicting (Height) from MLTEST_MSG.FamilyMSG
+       Train model FamiyModel
+       Create model HeightWeightMODEL predicting (Height) WITH (Weight float)  from MLTEST_MSG.HeightWeightMSG
+       Train model HeightWeightMODEL
     
 ![图片8](https://user-images.githubusercontent.com/124135718/231639975-240bde62-bd18-4932-8096-d06cc6438a20.png)
 
