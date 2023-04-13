@@ -29,12 +29,15 @@ Application Scenario
 
 
 **程序部署**
+
  **一.数据初始化**
+ 
  1.用sql语句创建表
 
  **Program deployment：**
 
 Data Initialization
+
 1. Create a table with sql statements
 
 
@@ -49,6 +52,7 @@ Data Initialization
 2.将提供的csv文件上传至云数据平台,并按截图所示将数据导入两个表，注意导入时去掉字段ID。
 
 2. Upload the provided csv file to the cloud data platform, and import the data into the two tables as shown in the screenshot. Note that the field ID is removed when importing.
+
 ![图片2](https://user-images.githubusercontent.com/124135718/231638013-2a06e658-c959-4a26-97e7-d1a131cb533f.png)
 
 ![图片3](https://user-images.githubusercontent.com/124135718/231638057-b9e85f72-4974-4726-b14e-8c57e628c195.png)
@@ -57,6 +61,7 @@ Data Initialization
 
           
 **二.前端部署**
+
 1.记事本打开distML文件夹下的config.js文件，修改信息后启动前端页面（可以用Tomcat）
 
 **Front-end deployment**
@@ -73,9 +78,11 @@ Data Initialization
 ②: When it is 1, the page is displayed in English, and when it is 0, it is Chinese.
 
 **三．后端部署**
+
 打开后端包中application.yml文件修改文件中数据库信息
 
 **Back-end deployment**
+
 Open the application.yml file in the backend package and modify the database information in the file
 
 ![图片6](https://user-images.githubusercontent.com/124135718/231639752-20d3eebd-588a-4928-a171-f04b9ce914f6.png)
