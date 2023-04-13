@@ -1,18 +1,24 @@
 # IntegratedML-IRIS-Cloud-Height-prediction
-基于InterSystems IntegratedML 的身高体重预测
-**概述：**
-随着生活水平的提高，人们对于身体健康的关注度越发提高。而孩子的健康发育也愈来愈加成为了家长关注的话题，从孩子的身高体重可以反应出孩子的身体发育状况，因此及时的进行身高预测及体重意义重大，通过科学的预测及对比及时关注孩子的发育状态。
-该项目通过使用InterSystems IRIS Cloud SQL，通过录入大量体重身高相关数据支持，建立基于IntegratedML 的AutoML进行预测分析，根据输入父母身高，快速预测儿童未来身高，并根据当前身高体重状况判断儿童的体重指数是否处于正常范围。
 
-关键应用：InterSystems IRIS Cloud SQL、IntegratedML 
+
+
 **Overview：**
+
 With the improvement of living standards, people pay more and more attention to physical health. And the healthy development of children has become more and more a topic of concern for parents. The child's physical development can be reflected from the child's height and weight. Therefore, it is of great significance to predict the height and weight in a timely manner. Pay attention to the child's developmental state through scientific prediction and comparison.
 The project uses InterSystems IRIS Cloud SQL to support by entering a large number of weight and height related data, and establishes AutoML based on IntegratedML for predictive analysis. According to the input parent height, it can quickly predict the future height of children, and judge whether the child's body mass index is based on the current height and weight status. In the normal range.
 
 Key Applications: InterSystems IRIS Cloud SQL, IntegratedML
 
+# 基于InterSystems IntegratedML 的身高体重预测
 
-Function：
+**概述：**
+
+随着生活水平的提高，人们对于身体健康的关注度越发提高。而孩子的健康发育也愈来愈加成为了家长关注的话题，从孩子的身高体重可以反应出孩子的身体发育状况，因此及时的进行身高预测及体重意义重大，通过科学的预测及对比及时关注孩子的发育状态。
+该项目通过使用InterSystems IRIS Cloud SQL，通过录入大量体重身高相关数据支持，建立基于IntegratedML 的AutoML进行预测分析，根据输入父母身高，快速预测儿童未来身高，并根据当前身高体重状况判断儿童的体重指数是否处于正常范围。
+
+关键应用：InterSystems IRIS Cloud SQL、IntegratedML 
+
+**Function：**
 By applying this program, the height of children in normal developmental state can be quickly predicted. Through the results, parents can judge whether the child's development is normal and whether clinical intervention is required, which will help to understand the child's future height; through the current weight status Determine whether the current child's BMI is normal and understand the child's current health status.
 
 
@@ -22,11 +28,11 @@ Application Scenario
 
 
 
-程序部署
-一.数据初始化
-1.用sql语句创建表
+**程序部署**
+ **一.数据初始化**
+ 1.用sql语句创建表
 
-Program deployment：
+ **Program deployment：**
 
 Data Initialization
 1. Create a table with sql statements
@@ -37,7 +43,7 @@ Data Initialization
     create table IF NOT EXISTS MLTEST_MSG.FamilyMSG(id int primary key identity(101,2),Csex int, Family float,Father float,Mother float, num int,Height float);
     create table IF NOT EXISTS MLTEST_MSG.FamilyPredictMSG(id int primary key identity(101,2),Csex int, Family float,Father float,Mother float, num int,Height float);
 
-![图片1](https://user-images.githubusercontent.com/124135718/231645513-1c1a137a-9bec-407f-bfdd-e48a974c4ade.png)
+ ![图片1](https://user-images.githubusercontent.com/124135718/231645513-1c1a137a-9bec-407f-bfdd-e48a974c4ade.png)
 
 
 2.将提供的csv文件上传至云数据平台,并按截图所示将数据导入两个表，注意导入时去掉字段ID。
@@ -50,10 +56,10 @@ Data Initialization
 ![图片4](https://user-images.githubusercontent.com/124135718/231638165-4ae188f1-b85e-4ae8-9f7f-bd316f098976.png)
 
           
-二.前端部署
+**二.前端部署**
 1.记事本打开distML文件夹下的config.js文件，修改信息后启动前端页面（可以用Tomcat）
 
-Front-end deployment
+**Front-end deployment**
 1. Notepad Open the config.js file under the distML folder, modify the information and start the front-end page (you can use Tomcat)
 
 ![图片5](https://user-images.githubusercontent.com/124135718/231638315-5b860f04-cd3b-4845-a24c-40ba959a57d6.png)
@@ -66,10 +72,10 @@ Front-end deployment
 ①: Backend path 
 ②: When it is 1, the page is displayed in English, and when it is 0, it is Chinese.
 
-三．后端部署
+**三．后端部署**
 打开后端包中application.yml文件修改文件中数据库信息
 
-Back-end deployment
+**Back-end deployment**
 Open the application.yml file in the backend package and modify the database information in the file
 
 ![图片6](https://user-images.githubusercontent.com/124135718/231639752-20d3eebd-588a-4928-a171-f04b9ce914f6.png)
@@ -103,13 +109,13 @@ The first time you enter the page, the model will be created and trained, and yo
 ![图片8](https://user-images.githubusercontent.com/124135718/231639975-240bde62-bd18-4932-8096-d06cc6438a20.png)
 
 
-使用流程
+**使用流程**
 
 ①选择模块
 ②填写相关数据，若有成年兄弟姐妹数据可点击add填写信息
 ③点击提交，等待一会出现预测结果
 
-Test Flow
+**Test Flow**
 
 ① Select the module
 ② Fill in the relevant data. If there is adult sibling data, you can click add to fill in the information.
