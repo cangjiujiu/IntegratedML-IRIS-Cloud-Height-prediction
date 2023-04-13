@@ -1,5 +1,10 @@
 # IntegratedML-IRIS-Cloud-Height-prediction
+基于InterSystems IntegratedML 的身高体重预测
+概述
+随着生活水平的提高，人们对于身体健康的关注度越发提高。而孩子的健康发育也愈来愈加成为了家长关注的话题，从孩子的身高体重可以反应出孩子的身体发育状况，因此及时的进行身高预测及体重意义重大，通过科学的预测及对比及时关注孩子的发育状态。
+该项目通过使用InterSystems IRIS Cloud SQL，通过录入大量体重身高相关数据支持，建立基于IntegratedML 的AutoML进行预测分析，根据输入父母身高，快速预测儿童未来身高，并根据当前身高体重状况判断儿童的体重指数是否处于正常范围。
 
+关键应用：InterSystems IRIS Cloud SQL、IntegratedML 
 Overview：
 With the improvement of living standards, people pay more and more attention to physical health. And the healthy development of children has become more and more a topic of concern for parents. The child's physical development can be reflected from the child's height and weight. Therefore, it is of great significance to predict the height and weight in a timely manner. Pay attention to the child's developmental state through scientific prediction and comparison.
 The project uses InterSystems IRIS Cloud SQL to support by entering a large number of weight and height related data, and establishes AutoML based on IntegratedML for predictive analysis. According to the input parent height, it can quickly predict the future height of children, and judge whether the child's body mass index is based on the current height and weight status. In the normal range.
@@ -27,18 +32,21 @@ Data Initialization
 1. Create a table with sql statements
 
 
-create table IF NOT EXISTS MLTEST_MSG.HeightWeightPredictMSG (Id int primary key identity(101,2),number varchar(50), Height float, Weight  float);
-create table IF NOT EXISTS MLTEST_MSG.HeightWeightMSG (Id int primary key identity(101,2),number varchar(50), Height float, Weight  float);
-create table IF NOT EXISTS MLTEST_MSG.FamilyMSG(id int primary key identity(101,2),Csex int, Family float,Father float,Mother float, num int,Height float);
-create table IF NOT EXISTS MLTEST_MSG.FamilyPredictMSG(id int primary key identity(101,2),Csex int, Family float,Father float,Mother float, num int,Height float);
-       ![1](https://user-images.githubusercontent.com/124135718/231637923-69f5e1f7-41a4-4389-9366-62d79edff651.png)
+    create table IF NOT EXISTS MLTEST_MSG.HeightWeightPredictMSG (Id int primary key identity(101,2),number varchar(50), Height float, Weight  float);
+    create table IF NOT EXISTS MLTEST_MSG.HeightWeightMSG (Id int primary key identity(101,2),number varchar(50), Height float, Weight  float);
+    create table IF NOT EXISTS MLTEST_MSG.FamilyMSG(id int primary key identity(101,2),Csex int, Family float,Father float,Mother float, num int,Height float);
+    create table IF NOT EXISTS MLTEST_MSG.FamilyPredictMSG(id int primary key identity(101,2),Csex int, Family float,Father float,Mother float, num int,Height float);
+
+![图片1](https://user-images.githubusercontent.com/124135718/231645513-1c1a137a-9bec-407f-bfdd-e48a974c4ade.png)
+
 
 2.将提供的csv文件上传至云数据平台,并按截图所示将数据导入两个表，注意导入时去掉字段ID。
 
 2. Upload the provided csv file to the cloud data platform, and import the data into the two tables as shown in the screenshot. Note that the field ID is removed when importing.
 ![图片2](https://user-images.githubusercontent.com/124135718/231638013-2a06e658-c959-4a26-97e7-d1a131cb533f.png)
 
- ![图片3](https://user-images.githubusercontent.com/124135718/231638057-b9e85f72-4974-4726-b14e-8c57e628c195.png)
+![图片3](https://user-images.githubusercontent.com/124135718/231638057-b9e85f72-4974-4726-b14e-8c57e628c195.png)
+
 ![图片4](https://user-images.githubusercontent.com/124135718/231638165-4ae188f1-b85e-4ae8-9f7f-bd316f098976.png)
 
           
@@ -87,10 +95,11 @@ Then start the automldemo1.jar package with the java command, the default port n
 After starting, enter the front-end page (if you use tomcat to start the address: ip: port/distML)
 The first time you enter the page, the model will be created and trained, and you need to wait for a while. You can also create a model with the following statement after the data initialization and table creation in step 1.
 
-Create model FamiyModel predicting (Height) from MLTEST_MSG.FamilyMSG
-Train model FamiyModel
-Create model HeightWeightMODEL predicting (Height) WITH (Weight float)  from MLTEST_MSG.HeightWeightMSG
-Train model HeightWeightMODEL
+    Create model FamiyModel predicting (Height) from MLTEST_MSG.FamilyMSG
+    Train model FamiyModel
+    Create model HeightWeightMODEL predicting (Height) WITH (Weight float)  from MLTEST_MSG.HeightWeightMSG
+    Train model HeightWeightMODEL
+    
 ![图片8](https://user-images.githubusercontent.com/124135718/231639975-240bde62-bd18-4932-8096-d06cc6438a20.png)
 
 
