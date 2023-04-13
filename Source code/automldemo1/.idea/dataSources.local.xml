@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="dataSource" uuid="d631f2e8-ee70-4408-899f-5219bb79726a">
+      <database-info product="InterSystems IRIS" version="InterSystems IRIS Version 2022.1.2.574 xDBC Protocol Version 65" jdbc-version="4.2" driver-name="InterSystems IRIS JDBC" driver-version="3.6.1.0" family="UNKNOWN" exact-version="2022.1">
+        <extra-name-characters>%</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <user-name>_system</user-name>
+      <fake-current-schema sc="MLTEST_MSG" />
+      <introspection-schemas>:MLTEST_MSG|@:@</introspection-schemas>
+    </data-source>
+    <data-source name="irisdriver - jdbc:IRIS://k8s-d9c5158d-a1b352ac-48695b0c57-6219ec0a3829cb7a.elb.us-east-1.amazonaws.com/User" uuid="283984ed-33b4-4cf1-8326-63af23c521e9">
+      <database-info product="InterSystems IRIS" version="InterSystems IRIS Version 2023.2.0ICCA.121 xDBC Protocol Version 65" jdbc-version="4.2" driver-name="InterSystems IRIS JDBC" driver-version="3.6.1.0" family="UNKNOWN" exact-version="2023.2">
+        <extra-name-characters>%</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>SQLAdmin</user-name>
+      <fake-current-schema sc="MLTEST_MSG" />
+      <introspection-schemas>:MLTEST_MSG|@:@</introspection-schemas>
+    </data-source>
+  </component>
+</project>

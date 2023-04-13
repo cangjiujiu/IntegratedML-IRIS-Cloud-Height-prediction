@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 定义数据源 -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.intersystems.jdbc.IRISDriver"></property>
+        <property name="url" value="jdbc:IRIS://k8s-d9c5158d-a1b352ac-48695b0c57-6219ec0a3829cb7a.elb.us-east-1.amazonaws.com/User"></property>
+        <property name="username" value="SQLAdmin"></property>
+        <property name="password" value="Aaa19970427*"></property>
+    </bean>
+
+    <!-- 定义连接会话工厂 -->
+    <bean name="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- 定义mybatis扫描器 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- 扫描的基础包 -->
+        <property name="basePackage" value="com.yss.mapper"></property>
+        <!-- 连接会话工厂 -->
+        <property name="sqlSessionFactoryBeanName" value="sessionFactory"></property>
+    </bean>
+
+</beans>
+
+

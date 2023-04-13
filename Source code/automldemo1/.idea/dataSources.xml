@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="dataSource" uuid="d631f2e8-ee70-4408-899f-5219bb79726a">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>spring
+
+D:/javaworkspace/javaworkspace/automldemo1/src/main/resources/applicationContext.xml</remarks>
+      <jdbc-driver>com.intersystems.jdbc.IRISDriver</jdbc-driver>
+      <jdbc-url>jdbc:IRIS://127.0.0.1:51774/MLTEST</jdbc-url>
+      <driver-properties>
+        <property name="applicationName" value="DataGrip" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="irisdriver - jdbc:IRIS://k8s-d9c5158d-a1b352ac-48695b0c57-6219ec0a3829cb7a.elb.us-east-1.amazonaws.com/User" uuid="283984ed-33b4-4cf1-8326-63af23c521e9">
+      <driver-ref>java.sql.Driver</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>com.intersystems.jdbc.IRISDriver</jdbc-driver>
+      <jdbc-url>jdbc:IRIS://k8s-d9c5158d-a1b352ac-48695b0c57-6219ec0a3829cb7a.elb.us-east-1.amazonaws.com/User</jdbc-url>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:IRIS://****/User
+    username: username
+    password: password
+    driver-class-name: com.intersystems.jdbc.IRISDriver
+
+server:
+  # 端口
+  port: 9999
+  servlet:
+    # 项目名称
+    context-path : /automl

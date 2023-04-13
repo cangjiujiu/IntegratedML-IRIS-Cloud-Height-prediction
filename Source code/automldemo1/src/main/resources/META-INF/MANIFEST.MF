@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Class-Path: jackson-datatype-jdk8-2.9.8.jar commons-io-2.6.jar log4j-t
+ o-slf4j-2.11.2.jar jackson-module-parameter-names-2.9.8.jar spring-bo
+ ot-starter-tomcat-2.1.4.RELEASE.jar fastjson2-2.0.27.jar spring-web-5
+ .1.6.RELEASE.jar spring-jcl-5.1.6.RELEASE.jar logback-core-1.2.3.jar 
+ javax.annotation-api-1.3.2.jar validation-api-2.0.1.Final.jar mybatis
+ -3.4.6.jar spring-jdbc-5.1.6.RELEASE.jar log4j-api-2.11.2.jar jackson
+ -datatype-jsr310-2.9.8.jar tomcat-embed-core-9.0.17.jar spring-beans-
+ 5.1.6.RELEASE.jar jackson-databind-2.9.8.jar intersystems-jdbc-3.6.1-
+ 3.6.1.jar spring-aop-5.1.6.RELEASE.jar spring-boot-starter-2.1.4.RELE
+ ASE.jar mybatis-spring-boot-starter-2.1.4.jar spring-boot-2.1.4.RELEA
+ SE.jar jackson-annotations-2.9.0.jar snakeyaml-1.23.jar logback-class
+ ic-1.2.3.jar spring-webmvc-5.1.6.RELEASE.jar fastjson-2.0.27.jar jack
+ son-core-2.9.8.jar spring-boot-starter-web-2.1.4.RELEASE.jar mybatis-
+ spring-2.0.0.jar slf4j-api-1.7.26.jar spring-core-5.1.6.RELEASE.jar s
+ pring-expression-5.1.6.RELEASE.jar HikariCP-3.2.0.jar hibernate-valid
+ ator-6.0.16.Final.jar spring-boot-autoconfigure-2.1.4.RELEASE.jar jbo
+ ss-logging-3.3.2.Final.jar tomcat-embed-el-9.0.17.jar spring-tx-5.1.6
+ .RELEASE.jar mybatis-spring-boot-autoconfigure-2.1.4.jar spring-conte
+ xt-5.1.6.RELEASE.jar spring-boot-starter-jdbc-2.1.4.RELEASE.jar tomca
+ t-embed-websocket-9.0.17.jar spring-boot-starter-logging-2.1.4.RELEAS
+ E.jar spring-boot-starter-json-2.1.4.RELEASE.jar classmate-1.4.0.jar 
+ jul-to-slf4j-1.7.26.jar fastjson2-extension-2.0.27.jar
+Main-Class: com.yss.App
+
