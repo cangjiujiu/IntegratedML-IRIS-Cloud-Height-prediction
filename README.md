@@ -1,11 +1,11 @@
 # IntegratedML-IRIS-Cloud-Height-prediction
 基于InterSystems IntegratedML 的身高体重预测
-概述
+**概述：**
 随着生活水平的提高，人们对于身体健康的关注度越发提高。而孩子的健康发育也愈来愈加成为了家长关注的话题，从孩子的身高体重可以反应出孩子的身体发育状况，因此及时的进行身高预测及体重意义重大，通过科学的预测及对比及时关注孩子的发育状态。
 该项目通过使用InterSystems IRIS Cloud SQL，通过录入大量体重身高相关数据支持，建立基于IntegratedML 的AutoML进行预测分析，根据输入父母身高，快速预测儿童未来身高，并根据当前身高体重状况判断儿童的体重指数是否处于正常范围。
 
 关键应用：InterSystems IRIS Cloud SQL、IntegratedML 
-Overview：
+**Overview：**
 With the improvement of living standards, people pay more and more attention to physical health. And the healthy development of children has become more and more a topic of concern for parents. The child's physical development can be reflected from the child's height and weight. Therefore, it is of great significance to predict the height and weight in a timely manner. Pay attention to the child's developmental state through scientific prediction and comparison.
 The project uses InterSystems IRIS Cloud SQL to support by entering a large number of weight and height related data, and establishes AutoML based on IntegratedML for predictive analysis. According to the input parent height, it can quickly predict the future height of children, and judge whether the child's body mass index is based on the current height and weight status. In the normal range.
 
@@ -108,6 +108,13 @@ The first time you enter the page, the model will be created and trained, and yo
 ①选择模块
 ②填写相关数据，若有成年兄弟姐妹数据可点击add填写信息
 ③点击提交，等待一会出现预测结果
+
+Test Flow
+
+① Select the module
+② Fill in the relevant data. If there is adult sibling data, you can click add to fill in the information.
+③ Click Submit and wait for the prediction result to appear in a while.
 ![图片9](https://user-images.githubusercontent.com/124135718/231639991-6c8a5367-abd8-4a01-b69a-c4a3485419c3.png)
 ![图片10](https://user-images.githubusercontent.com/124135718/231640020-c6dbb27c-5098-49dc-b2d5-c9a2444358de.png)
+
 
