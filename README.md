@@ -69,11 +69,13 @@ Open the application.yml file in the backend package and modify the database inf
 ②：用户名
 ③：密码
 然后用java命令启动automldemo1.jar包,默认端口号为9999
-
+![图片6](https://user-images.githubusercontent.com/124135718/231639752-20d3eebd-588a-4928-a171-f04b9ce914f6.png)
 ①: database url
 ②: Username
 ③: Password
+
 Then start the automldemo1.jar package with the java command, the default port number is 9999
+![图片7](https://user-images.githubusercontent.com/124135718/231639789-5650b1d4-460f-433a-ba0f-29b798a52648.png)
 
 
 启动之后进入前端页面（如果用tomcat启动地址为:  ip:port/distML）
@@ -86,10 +88,14 @@ Create model FamiyModel predicting (Height) from MLTEST_MSG.FamilyMSG
 Train model FamiyModel
 Create model HeightWeightMODEL predicting (Height) WITH (Weight float)  from MLTEST_MSG.HeightWeightMSG
 Train model HeightWeightMODEL
+![图片8](https://user-images.githubusercontent.com/124135718/231639975-240bde62-bd18-4932-8096-d06cc6438a20.png)
+
 
 使用流程
 
 ①选择模块
 ②填写相关数据，若有成年兄弟姐妹数据可点击add填写信息
 ③点击提交，等待一会出现预测结果
+![图片9](https://user-images.githubusercontent.com/124135718/231639991-6c8a5367-abd8-4a01-b69a-c4a3485419c3.png)
+![图片10](https://user-images.githubusercontent.com/124135718/231640020-c6dbb27c-5098-49dc-b2d5-c9a2444358de.png)
 
