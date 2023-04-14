@@ -97,7 +97,7 @@ Open the application.yml file in the backend package and modify the database inf
 ②: Username
 ③: Password
 
-Then start the automldemo1.jar package with the java command, the default port number is 9999
+Then start the automl-demo1-1.0-SNAPSHOT.jar package with the java command, the default port number is 9999
 
 ![图片7](https://user-images.githubusercontent.com/124135718/231639789-5650b1d4-460f-433a-ba0f-29b798a52648.png)
 
